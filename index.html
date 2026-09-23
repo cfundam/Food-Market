@@ -1,8 +1,110 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <!--For decoding special charecters/languege e.g. Arabic/Chinees languege-->
+    <meta name="viewport" content="width=device-witdth" initial-scale="1.0" />
+    <!--Tell the mobile browser to match width of you Webpage-->
     <title>"Food Market"</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="outer-container">
+      <!--Left side display message-->
+      <div class="side-message left-message">
+        <span>Fresh</span>
+        <span>Savings</span>
+        <span>Brighter</span>
+        <span>Days</span>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <!--diplaying a receipt-->
+      <article class="receipt">
+        <header class="receipt-hearder">
+          <div class="brand">
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+            <div>
+              <h1>
+                <span class="fresh">Fresh</span>
+                <span class="mart">Mart</span>
+              </h1>
+              <h2>Supermarket</h2>
+              <hr />
+            </div>
+          </div>
+          <p class="slogan">Good Food Better Lives</p>
+          <div class="store-address">
+            <p>123 Main Road, Cape Town, 8001</p>
+            <p>Tel: 021 555 0100</p>
+            <p>www.freshmart.co.za</p>
+          </div>
+        </header>
+        <!--dispaying Customer Receipt-->
+        <section class="receipt-information">
+          <h3>Customer receipt</h3>
+          <div class="row-info">
+            <span>Date:</span>
+            <span>09 September 2026 14:32</span>
+          </div>
+          <div class="row-info">
+            <span>Cashier:</span>
+            <span>Chumani</span>
+          </div>
+          <div class="row-info">
+            <span>Till</span>
+            <span>12</span>
+          </div>
+          <div class="row-info">
+            <span>Receipt No</span>
+            <span>Inv-000125</span>
+          </div>
+        </section>
+        <!--display products-->
+        <section class="products">
+          <div class="product-header">
+            <span>Item</span>
+            <span>Qty</span>
+            <span>Price</span>
+            <span>Total</span>
+          </div>
+          <!--display product  list, we will use JavaScript to display the items-->
+          <div class="product-list"></div>
+        </section>
+        <!--displaying sub total info-->
+        <section class="sub-total">
+          <div class="row-sub-total">
+            <span>Subtotal</span>
+            <span id="sub-total">R0.00</span>
+          </div>
+          <div class="row-sub-total">
+            <span>Discount</span>
+            <span id="discount">R0.00</span>
+          </div>
+          <div class="row-sub-total">
+            <span>Vat</span>
+            <span id="vat">R0.00</span>
+          </div>
+        </section>
+        <!--displaying grand total info-->
+        <section class="grand-total">
+          <div class="row-grand-total">
+            <span>Total</span>
+            <span id="grand-total">R0.00</span>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>
