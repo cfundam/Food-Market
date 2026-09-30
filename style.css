@@ -96,6 +96,7 @@ body {
     0% 100%
   );
 }
+/* header section */
 .receipt-hearder {
   text-align: center;
 }
@@ -113,4 +114,67 @@ body {
 hr {
   border: 1px solid red;
   width: 30%;
+  margin-left: 3px;
+}
+.brand h1 {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 2;
+  font-weight: 800;
+}
+.fresh {
+  color: black;
+}
+.mart {
+  color: red;
+}
+.brand h2 {
+  font-size: 12px;
+  letter-spacing: 10px;
+}
+.slogan {
+  font-size: 14px;
+  word-spacing: 2px;
+  margin-left: 20px;
+}
+.better-lives {
+  margin-left: 6px;
+}
+.store-address {
+  margin-top: 10px;
+  font-size: 12px;
+}
+/* divider section */
+.divider {
+  margin: 22px 0px;
+  height: 2px;
+  background: repeating-linear-gradient(
+    to right,
+    #4b4b4b 8px,
+    #4b4b4b 14px,
+    transparent 5px,
+    transparent 18px
+  );
+}
+/*styling reciept */
+.receipt-information {
+  margin-left: 40px;
+}
+.receipt-information h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.row-info {
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+}
+
+.product-header,
+product-list {
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
 }
